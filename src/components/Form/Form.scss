@@ -1,0 +1,65 @@
+.login {
+  display: flex;
+  flex-direction: column;
+
+  &__form {
+    background: aqua;
+    width: 18rem;
+    margin: auto;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+
+    &-header {
+      text-align: center;
+    }
+
+    &-checkbox-wrapper {
+      align-self: center;
+      margin-bottom: 1rem;
+    }
+
+    &-checkbox-label {
+      line-height: 0.5rem;
+      position: relative;
+      bottom: 0.1rem;
+      font-weight: bold;
+    }
+
+    &-submit-button {
+      justify-content: center;
+      position: relative;
+      left: 50%;
+      transform: translate(-50%, 0);
+      margin-bottom: 1.5rem;
+      width: 10rem;
+    }
+  }
+
+
+  &__field {
+    display: flex;
+    align-items: start;
+    height: 4rem;
+    flex-direction: column;
+    align-self: center;
+    margin: auto;
+    padding: 0 2rem;
+
+    &-input {
+      border-radius: 0.5rem;
+      border: none;
+      height: 2rem;
+      align-self: stretch;
+      outline: none;
+    }
+
+    &-text-danger {
+      font-size: 1rem;
+      color: red;
+      align-self: start;
+      height: 1.5rem;
+    }
+  }
+
+}
