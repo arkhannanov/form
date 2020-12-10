@@ -4,10 +4,14 @@ import './Form.scss';
 
 const validate = values => {
     const errors = {}
+
+    console.log(values);
     if (!values.email) {
         errors.email = 'Необходимое поле'
+        return errors;
     } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
-        errors.email = 'Неправильный e-mail'
+        errors.email = 'Неправильный e-mail';
+        return errors;
     }
     if (!values.password) {
         errors.password = 'Необходимое поле'
