@@ -73,7 +73,9 @@ const LoginReduxForm = reduxForm({form: 'login', validate})(LoginForm)
 
 const Form = (props) => {
     const onSubmit = (formData) => {
-        alert("Форма отправлена");
+        if (formData.email && formData.password && formData.offer) {
+            alert("Форма отправлена");
+        }
     }
 
     return <div className='login'>
